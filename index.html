@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./queries.css" />
     <title>Omnifood</title>
   </head>
   <body>
@@ -28,12 +29,17 @@
           <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
 
     <!-- HERO -->
     <section class="section-hero">
       <div class="hero">
-        <div>
+        <div class="hero-text-box">
           <h1 class="heading-primary">
             A healty meal delivered to your door, every single day
           </h1>
@@ -63,7 +69,9 @@
           </div>
         </div>
 
-        <img class="hero-img" src="./img/hero.png" alt="" />
+        <div class="hero-img-box">
+          <img class="hero-img" src="./img/hero.png" alt="" />
+        </div>
       </div>
     </section>
 
@@ -207,7 +215,7 @@
             </ul>
           </div>
         </div>
-        <div>
+        <div class="diets">
           <h3 class="heading-tertiary">Works with any diet:</h3>
 
           <ul class="list">

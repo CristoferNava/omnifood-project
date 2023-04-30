@@ -12,6 +12,7 @@ html {
   /* 10px / 16px => 0.625 => 62.5% */
   /* 1rem = 10px */
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -19,6 +20,8 @@ body {
   font-weight: 400;
   line-height: 1;
   color: #555;
+
+  overflow-x: hidden;
 }
 
 .grid {
@@ -93,6 +96,7 @@ body {
   background-color: #fdf2e9;
   padding: 0 4.8rem;
   height: 9.6rem;
+  position: relative;
 
   /* FLEXBOX  */
   display: flex;
@@ -143,6 +147,27 @@ body {
   background-color: #cf711f;
 }
 
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+/* We are selecting the element that has the .icon-mobile-nav clas 
+and the attribute with the kay-value name="close-outline"*/
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 /****************************************************************************/
 /* HERO */
 /******************************************************************************/
@@ -188,6 +213,7 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   cursor: pointer;
+  color: #fff;
 
   transition: all 0.3s;
 }
@@ -195,7 +221,6 @@ body {
 .btn--full:link,
 .btn--ful:visited {
   background-color: #e67e22;
-  color: #fff;
 }
 
 .btn--full:hover,

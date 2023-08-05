@@ -856,3 +856,14 @@ and the attribute with the kay-value name="close-outline"*/
 .footer-link:active {
   color: #555;
 }
+
+/**************************************************************************/
+/* Message for recruiters */
+/**************************************************************************/
+.message-for-recruiters {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  font-size: 18px;
+  color: black;
+}
